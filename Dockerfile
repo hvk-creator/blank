@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     ttyd \
     bash \
     curl \
-    redis-tools \
+    redis-tools
 
 # Choreo Requirement: Create a non-root user with a UID between 10000-20000
 USER root
