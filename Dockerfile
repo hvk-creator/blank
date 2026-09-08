@@ -16,5 +16,5 @@ WORKDIR /root
 EXPOSE 7681
 
 # Start ttyd on port 8080, launching bash
-CMD ["ttyd", "sh", "-c", "redis-cli", "-u", "redis://orkestr-addon-blank-r6379/0"]
+CMD ["ttyd", "sh", "-c", "redis-cli -u redis://orkestr-addon-blank-r6379/0"]
 
