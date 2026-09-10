@@ -16,6 +16,6 @@ WORKDIR /root
 EXPOSE 7681
 
 # Start ttyd on port 8080, launching bash
-CMD ["sh", "-c", "ttyd -p ${PORT:-8080} -c ${TERMINAL_USER}:${TERMINAL_PASSWORD} bash"]
+CMD ["sh", "-c", "ttyd -W -p ${PORT:-8080} -c ${TERMINAL_USER}:${TERMINAL_PASSWORD} bash"]
 
 
